@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Navegamos al directorio raíz del proyecto
+cd "$(dirname "$0")/.."
+
+echo "Buildeando la aplicacion"
+dotnet build <TiendaUCN>.csproj --no-restore --verbosity quiet
+   
+echo 'Husky.Net is awesome!'
