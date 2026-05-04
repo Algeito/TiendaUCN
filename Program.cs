@@ -4,8 +4,6 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-app.MapOpenApi();
+            app.MapOpenApi();
 
-app.Run();
-
-// hola 
+        app.Run();
